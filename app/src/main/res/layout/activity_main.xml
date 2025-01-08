@@ -11,10 +11,10 @@
         android:id="@+id/tvhello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Narendra"
+        android:text="Selamat Pagi Bos Naren"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/montserratextrabold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="40dp"
@@ -26,10 +26,10 @@
         android:layout_height="wrap_content"
         android:text="Rabu,23 Januari 2025"
         android:textStyle="bold"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/monsterratbold"
         app:layout_constraintTop_toBottomOf="@id/tvhello"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="30dp"/>
 
@@ -55,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Estimasi Hari Ini"
+                android:fontFamily="@font/montserratextrabold"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -64,13 +65,14 @@
                 android:id="@+id/tvAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterratbold"
                 android:text="Rp. 100.000,00-"
                 android:textColor="#4CAF50"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/tvEstimation"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="2dp" />
 
             <!-- Icon Group -->
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,7 +84,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp">
 
-                <!-- Transaksi -->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/clTransaksi"
                     android:layout_width="0dp"
@@ -95,7 +97,7 @@
                         android:id="@+id/imgTransaksi"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/baseline_attach_money_24"
+                        android:src="@drawable/transaksihd"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
@@ -106,13 +108,14 @@
                         android:layout_height="wrap_content"
                         android:text="Transaksi"
                         android:textSize="14sp"
+                        android:fontFamily="@font/monsterratbold"
                         app:layout_constraintTop_toBottomOf="@id/imgTransaksi"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         android:layout_marginTop="8dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <!-- Pelanggan -->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/clPelanggan"
                     android:layout_width="0dp"
@@ -136,6 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pelanggan"
+                        android:fontFamily="@font/monsterratbold"
                         android:textSize="14sp"
                         app:layout_constraintTop_toBottomOf="@id/imgPelanggan"
                         app:layout_constraintStart_toStartOf="parent"
@@ -143,9 +147,9 @@
                         android:layout_marginTop="8dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <!-- Laporan -->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
-                     android:id="@+id/clLaporan"
+                    android:id="@+id/clLaporan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:layout_constraintWidth_percent="0.3"
@@ -168,6 +172,7 @@
                         android:layout_height="wrap_content"
                         android:text="Laporan"
                         android:textSize="14sp"
+                        android:fontFamily="@font/monsterratbold"
                         app:layout_constraintTop_toBottomOf="@id/imgLaporan"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -176,4 +181,289 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siap melayani pelanggan dengan setulus hati"
+        android:fontFamily="@font/monsterratbold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cardEstimation"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/jangankecewakanpelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/monsterratbold"
+        android:text="Jangan kecewakan pelanggan!"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvservice"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAkun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jangankecewakanpelanggan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgAkun"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/akun"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAkun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akun"
+                android:fontFamily="@font/monsterratbold"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/imgAkun"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardlayanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintStart_toEndOf="@id/cardAkun"
+        app:layout_constraintTop_toBottomOf="@id/jangankecewakanpelanggan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imglayanan"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/layanan"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvlayanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layanan"
+                android:fontFamily="@font/monsterratbold"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/imglayanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtambahan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintStart_toEndOf="@id/cardlayanan"
+        app:layout_constraintTop_toBottomOf="@id/jangankecewakanpelanggan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgtambahan"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/tambahan"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvtambahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambahan"
+                android:fontFamily="@font/monsterratbold"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/imgtambahan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardpegawai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardAkun">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgpegawai"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/pegawai"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvpegawai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pegawai"
+                android:fontFamily="@font/monsterratbold"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/imgpegawai"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardcabang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintStart_toEndOf="@id/cardAkun"
+        app:layout_constraintTop_toBottomOf="@id/cardlayanan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgcabang"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/cabang"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvcabang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cabang"
+                android:fontFamily="@font/monsterratbold"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/imgcabang"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardprinter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="8dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintStart_toEndOf="@id/cardcabang"
+        app:layout_constraintTop_toBottomOf="@id/cardtambahan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgprinter"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/printer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Printer"
+                android:fontFamily="@font/monsterratbold"
+                android:textSize="14sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/imgprinter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
