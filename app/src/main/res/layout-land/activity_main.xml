@@ -14,11 +14,11 @@
         android:text="Selamat Pagi Bos Naren"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:fontFamily="@font/robotoblack"
+        android:fontFamily="@font/montserratextrabold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="15dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="45dp"/>
 
     <TextView
         android:id="@+id/date"
@@ -29,25 +29,24 @@
         android:fontFamily="@font/monsterratbold"
         app:layout_constraintTop_toBottomOf="@id/tvhello"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="220dp"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardEstimation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
         app:cardCornerRadius="12dp"
-
         app:layout_constraintTop_toBottomOf="@id/date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="400dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="16dp">
 
             <TextView
@@ -55,9 +54,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Estimasi Hari Ini"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/montserratextrabold"
                 android:textColor="#000000"
-                android:textSize="16sp"
+                android:layout_marginTop="0dp"
+                android:textSize="25sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -66,13 +67,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/monsterratbold"
-                android:text="Rp. 100.000,00-"
+                android:text="100.000,00"
                 android:textColor="#4CAF50"
-                android:textSize="20sp"
+                android:textSize="25sp"
+                android:layout_marginStart="50dp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/tvEstimation"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="2dp" />
+                app:layout_constraintStart_toEndOf="@id/tvEstimation"
+                android:layout_marginTop="5dp"
+                tools:ignore="MissingConstraints" />
 
             <!-- Icon Group -->
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,12 +84,12 @@
                 app:layout_constraintTop_toBottomOf="@id/tvAmount"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="30dp">
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/clTransaksi"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintWidth_percent="0.3"
                     app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +99,7 @@
                         android:id="@+id/imgTransaksi"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_marginRight="120dp"
                         android:src="@drawable/transaksihd"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -107,21 +110,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Transaksi"
-                        android:textSize="14sp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="70dp"
                         android:fontFamily="@font/monsterratbold"
-                        app:layout_constraintTop_toBottomOf="@id/imgTransaksi"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgTransaksi"
                         android:layout_marginTop="8dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/clPelanggan"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintWidth_percent="0.3"
-                    app:layout_constraintStart_toEndOf="@id/clTransaksi"
+                    app:layout_constraintTop_toBottomOf="@id/clTransaksi"
                     android:layout_marginStart="16dp"
                     tools:ignore="MissingConstraints">
 
@@ -129,6 +132,7 @@
                         android:id="@+id/imgPelanggan"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_marginRight="135dp"
                         android:src="@drawable/user"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -140,20 +144,20 @@
                         android:layout_height="wrap_content"
                         android:text="Pelanggan"
                         android:fontFamily="@font/monsterratbold"
-                        android:textSize="14sp"
-                        app:layout_constraintTop_toBottomOf="@id/imgPelanggan"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="70dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgPelanggan"
                         android:layout_marginTop="8dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/clLaporan"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintWidth_percent="0.3"
-                    app:layout_constraintStart_toEndOf="@id/clPelanggan"
+                    app:layout_constraintTop_toBottomOf="@id/clPelanggan"
                     android:layout_marginStart="16dp"
                     tools:ignore="MissingConstraints">
 
@@ -161,6 +165,7 @@
                         android:id="@+id/imgLaporan"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:layout_marginRight="110dp"
                         android:src="@drawable/note"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -171,55 +176,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Laporan"
-                        android:textSize="14sp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="73dp"
                         android:fontFamily="@font/monsterratbold"
-                        app:layout_constraintTop_toBottomOf="@id/imgLaporan"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgLaporan"
                         android:layout_marginTop="8dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/tvservice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Siap melayani pelanggan dengan setulus hati"
-        android:fontFamily="@font/poppinslightitalic"
-        android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@id/cardEstimation"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="35dp"/>
-
-    <TextView
-        android:id="@+id/jangankecewakanpelanggan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/poppinssemibolditalic"
-        android:text="Don't fail the customers"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvservice"
-        tools:ignore="TextSizeCheck" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardAkun"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp"
         android:layout_margin="8dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintWidth_percent="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jangankecewakanpelanggan">
+        app:layout_constraintStart_toEndOf="@id/cardEstimation"
+        app:layout_constraintTop_toBottomOf="@id/date">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -228,8 +207,8 @@
 
             <ImageView
                 android:id="@+id/imgAkun"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/akun"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -241,27 +220,27 @@
                 android:layout_height="wrap_content"
                 android:text="Akun"
                 android:fontFamily="@font/monsterratbold"
-                android:textSize="14sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/imgAkun"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardlayanan"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp"
         android:layout_margin="8dp"
         app:layout_constraintWidth_percent="0.3"
         app:layout_constraintStart_toEndOf="@id/cardAkun"
-        app:layout_constraintTop_toBottomOf="@id/jangankecewakanpelanggan">
+        app:layout_constraintTop_toBottomOf="@id/date">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -270,8 +249,8 @@
 
             <ImageView
                 android:id="@+id/imglayanan"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/layanan"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -283,27 +262,27 @@
                 android:layout_height="wrap_content"
                 android:text="Layanan"
                 android:fontFamily="@font/monsterratbold"
-                android:textSize="14sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/imglayanan"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardtambahan"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp"
         android:layout_margin="8dp"
         app:layout_constraintWidth_percent="0.3"
         app:layout_constraintStart_toEndOf="@id/cardlayanan"
-        app:layout_constraintTop_toBottomOf="@id/jangankecewakanpelanggan">
+        app:layout_constraintTop_toBottomOf="@id/date">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -312,8 +291,8 @@
 
             <ImageView
                 android:id="@+id/imgtambahan"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/tambahan"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -325,26 +304,26 @@
                 android:layout_height="wrap_content"
                 android:text="Tambahan"
                 android:fontFamily="@font/monsterratbold"
-                android:textSize="14sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/imgtambahan"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardpegawai"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp"
         android:layout_margin="8dp"
         app:layout_constraintWidth_percent="0.3"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardEstimation"
         app:layout_constraintTop_toBottomOf="@id/cardAkun">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -354,8 +333,8 @@
 
             <ImageView
                 android:id="@+id/imgpegawai"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/pegawai"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -367,20 +346,20 @@
                 android:layout_height="wrap_content"
                 android:text="Pegawai"
                 android:fontFamily="@font/monsterratbold"
-                android:textSize="14sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/imgpegawai"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardcabang"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp"
@@ -396,8 +375,8 @@
 
             <ImageView
                 android:id="@+id/imgcabang"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/cabang"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -409,20 +388,20 @@
                 android:layout_height="wrap_content"
                 android:text="Cabang"
                 android:fontFamily="@font/monsterratbold"
-                android:textSize="14sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/imgcabang"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardprinter"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:outlineAmbientShadowColor="@color/black"
         app:cardElevation="4dp"
         app:cardCornerRadius="8dp"
@@ -438,8 +417,8 @@
 
             <ImageView
                 android:id="@+id/imgprinter"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/printer"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -451,12 +430,12 @@
                 android:layout_height="wrap_content"
                 android:text="Printer"
                 android:fontFamily="@font/monsterratbold"
-                android:textSize="14sp"
+                android:textSize="17sp"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/imgprinter"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
