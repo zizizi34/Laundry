@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pelanggan.data_pegawai">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvdatapelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingRecyclerViewAdapter"
+        tools:itemCount="10"
+        tools:listitem="@layout/card_data_pegawai" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Tambah Pelanggan"
+        android:src="@drawable/tambah_24"
+        app:backgroundTint="@color/white" />
+
+</RelativeLayout>

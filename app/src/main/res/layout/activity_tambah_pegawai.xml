@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pelanggan.tambah_pegawai">
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH PEGAWAI"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvnama"/>
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/tvjudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etnama"
+        />
+
+    <EditText
+        android:id="@+id/etnama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nama Lengkap"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/tvnama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvposisi"/>
+
+    <TextView
+        android:id="@+id/tvposisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Posisi"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/etnama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etposisi"/>
+
+    <EditText
+        android:id="@+id/etposisi"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Posisi"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/tvposisi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvstatus"/>
+
+    <TextView
+        android:id="@+id/tvstatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/etposisi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etstatus"/>
+
+    <EditText
+        android:id="@+id/etstatus"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="35dp"
+        android:hint="Status"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@id/tvnohp_pegawai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvstatus" />
+
+    <TextView
+        android:id="@+id/tvnohp_pegawai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="No HP"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="35dp"
+        app:layout_constraintTop_toBottomOf="@id/etstatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etnohp_pegawai"/>
+
+    <EditText
+        android:id="@+id/etnohp_pegawai"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="35dp"
+        android:hint="No HP"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@id/bttambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvnohp_pegawai" />
+
+
+    <Button
+        android:id="@+id/bttambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="50dp"
+        app:layout_constraintTop_toBottomOf="@id/etnohp_pegawai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
