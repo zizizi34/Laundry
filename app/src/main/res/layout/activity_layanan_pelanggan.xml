@@ -13,11 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textjudul"
-        android:text="LAYANAN LAUNDRY"
+        android:text="@string/Layanan_Laundry"
         android:textAlignment="center"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:fontFamily="@font/monsterratbold"
+        android:fontFamily="@font/poppinssemibolditalic"
         android:textSize="30dp"
         tools:ignore="MissingConstraints" />
 
@@ -45,7 +45,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Setrika"
+                android:text="@string/card_setrika"
                 android:fontFamily="@font/monsterratbold"
                 android:textColor="@color/black"
                 android:textSize="18sp"
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuci Biasa"
+                android:text="@string/card_cuci_biasa"
                 android:textColor="@color/black"
                 android:fontFamily="@font/monsterratbold"
                 android:textSize="18sp"
@@ -131,7 +131,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuci Sepatu"
+                android:text="@string/card_cuci_sepatu"
                 android:textColor="@color/black"
                 android:fontFamily="@font/monsterratbold"
                 android:textSize="17sp"
