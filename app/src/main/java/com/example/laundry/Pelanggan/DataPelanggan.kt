@@ -17,8 +17,8 @@ class DataPelanggan : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_data_pelanggan)
 
-        val tambahPelanggan = findViewById<FloatingActionButton>(R.id.fabDATA_PENGGUNA_TAMBAH)
-        tambahPelanggan.setOnClickListener {
+        val tambahPegawai = findViewById<FloatingActionButton>(R.id.fabDATA_PENGGUNA_TAMBAH)
+        tambahPegawai.setOnClickListener {
             val intent = Intent(this, TambahPelanggan::class.java)
             startActivity(intent)
             }
