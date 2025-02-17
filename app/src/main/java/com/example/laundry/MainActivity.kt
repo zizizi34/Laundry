@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
-import android.widget.LinearLayout
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.laundry.Pelanggan.DataPelanggan
-import com.example.laundry.Pelanggan.data_pegawai
+import com.example.laundry.DataPelanggan.DataPelanggan
+
+import com.example.laundry.DataPelanggan.Data_pegawai
 
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         val appDataPegawai = findViewById<CardView>(R.id.cardpegawai)
         appDataPegawai.setOnClickListener{
-            val intent = Intent(this, data_pegawai::class.java)
+            val intent = Intent(this, Data_pegawai::class.java)
             startActivity(intent)
         }
 

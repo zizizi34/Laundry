@@ -10,4 +10,19 @@
     <string name="Alamat">Alamat</string>
     <string name="No_Hp_aktif">No Hp</string>
     <string name="button_simpan">BT Simpan</string>
+    <string name="validasi_nama_pelanggan">Nama Pelanggan</string>
+    <string name="validasi_alamat_pelanggan">Alamat</string>
+    <string name="validasi_cabang_pelanggan">Cabang</string>
+    <string name="validasi_nohp_pelanggan">No Hp</string>
+    <string name="sukses_simpan_pelanggan">Sukses Simpan Pelanggan</string>
+    <string name="gagal_simpan_pelanggan">Gagal Simpan Pelanggan</string>
+    <string name="sukses_simpan_pegawai">suksessimpanpegawai</string>
+    <string name="gagal_simpan_pegawai">gagal simpan pegawai</string>
+    <string name="card_pegawai_id">card pegawai id</string>
+    <string name="card_pegawai_nama">card pegawai nama</string>
+    <string name="card_pegawai_alamat">card pegawai alamat</string>
+    <string name="card_pelanggan_hubungi">card pelanggan hubungi</string>
+    <string name="card_pelanggan_lihat">card pelanggan lihat</string>
+    <string name="card_pelanggan_nohp">card pelanggan nohp</string>
+    <string name="card_pelanggan_cabang">card_pelanggan_cabang</string>
 </resources>

@@ -11,4 +11,19 @@
     <string name="Alamat">ALamat</string>
     <string name="No_Hp_aktif">No HP Aktif</string>
     <string name="button_simpan">Simpan</string>
+    <string name="validasi_nama_pelanggan">Nama Pelanggan Tidak Boleh Kosong</string>
+    <string name="validasi_alamat_pelanggan">Alamat Pelanggan Tidak Boleh kosong</string>
+    <string name="validasi_cabang_pelanggan">Cabang Pelanggan Tidak Boleh Kosong</string>
+    <string name="validasi_nohp_pelanggan">Nomer Hp Pelanggan Tidak BoLeh Kosong</string>
+    <string name="sukses_simpan_pelanggan">sukses simpan pellanggan</string>
+    <string name="gagal_simpan_pelanggan">Gagal Simpan Pelanggan</string>
+    <string name="sukses_simpan_pegawai">sukses simpan pegawai</string>
+    <string name="gagal_simpan_pegawai">gagal simpan pegawai</string>
+    <string name="card_pegawai_id">" id pegawai"</string>
+    <string name="card_pegawai_nama">nama pegawai</string>
+    <string name="card_pegawai_alamat">alamat pegawai</string>
+    <string name="card_pelanggan_hubungi">Hubungi</string>
+    <string name="card_pelanggan_lihat">Lihat</string>
+    <string name="card_pelanggan_nohp">Nomor Hp</string>
+    <string name="card_pelanggan_cabang">Cabang</string>
 </resources>

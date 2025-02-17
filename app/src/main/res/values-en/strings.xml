@@ -11,4 +11,19 @@
     <string name="Alamat">" Address"</string>
     <string name="No_Hp_aktif">Active cellphone number</string>
     <string name="button_simpan">Save</string>
+    <string name="validasi_nama_pelanggan">Customer Name Cannot Be Empty</string>
+    <string name="validasi_alamat_pelanggan">Customer Adress Cannot Be Empty</string>
+    <string name="validasi_cabang_pelanggan">Customer Branch Cannot Be Empty</string>
+    <string name="validasi_nohp_pelanggan">Customer Phone Cannot Be Empty</string>
+    <string name="sukses_simpan_pelanggan">success in saving customers</string>
+    <string name="gagal_simpan_pelanggan">failed to save customers</string>
+    <string name="sukses_simpan_pegawai">success in saving employees</string>
+    <string name="gagal_simpan_pegawai">failed to save employees</string>
+    <string name="card_pegawai_id">"employee ID "</string>
+    <string name="card_pegawai_nama">employee name</string>
+    <string name="card_pegawai_alamat">employee address</string>
+    <string name="card_pelanggan_hubungi">contact</string>
+    <string name="card_pelanggan_lihat">Look</string>
+    <string name="card_pelanggan_nohp">phone number</string>
+    <string name="card_pelanggan_cabang">branch</string>
 </resources>
