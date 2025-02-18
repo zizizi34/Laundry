@@ -70,12 +70,11 @@
         tools:ignore="DuplicateClickableBoundsCheck" />
 
     <EditText
-        android:id="@+id/etTerdaftar_Pelanggan"
+        android:id="@+id/etcabang"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Terdaftar"
+        android:hint="Cabang"
         android:fontFamily="@font/poppinsregular"
-        android:inputType="phone"
         android:padding="16dp"
         android:background="@drawable/roundedet"
         android:layout_marginStart="10dp"

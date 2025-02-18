@@ -1,14 +1,16 @@
-package com.example.laundry.adapter
+package com.example.laundry.Pelanggan
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.laundry.R
 import com.example.laundry.modeldata.ModelPelanggan
-
+import org.w3c.dom.Text
 
 
 class adapter_data_pelanggan(private val listPelanggan: ArrayList<ModelPelanggan>) :
@@ -40,12 +42,14 @@ class adapter_data_pelanggan(private val listPelanggan: ArrayList<ModelPelanggan
         val tvNama = itemView.findViewById<TextView>(R.id.tvDataNamaPelanggan)
         val tvAlamat = itemView.findViewById<TextView>(R.id.tvDataAlamatPelanggan)
         val tvNoHP = itemView.findViewById<TextView>(R.id.tvDataNoHpPelanggan)
-        val tvTerdaftar = itemView.findViewById<TextView>(R.id.etTerdaftar_Pelanggan)
+        val tvTerdaftar = itemView.findViewById<TextView>(R.id.tvTerdaftar_Pelanggan)
         val btHubungi = itemView.findViewById<Button>(R.id.btnHubungi)
         val btLihat = itemView.findViewById<Button>(R.id.btnLihat)
+        val etcabang = itemView.findViewById<TextView>(R.id.etcabang)
     }
 
     override fun getItemCount(): Int {
         return listPelanggan.size
-       }
+    }
 }
+

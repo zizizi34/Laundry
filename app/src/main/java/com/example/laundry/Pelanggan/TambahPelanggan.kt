@@ -1,4 +1,5 @@
 package com.example.laundry.Pelanggan
+
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -41,7 +42,7 @@ class TambahPelanggan : AppCompatActivity() {
         etNama = findViewById(R.id.et_nama)
         etAlamat = findViewById(R.id.et_alamat)
         etNoHP = findViewById(R.id.et_hp)
-        etCabang = findViewById(R.id.etTerdaftar_Pelanggan)
+        etCabang = findViewById(R.id.etcabang)
         btSimpan = findViewById(R.id.btn_simpan)
     }
 
@@ -127,6 +128,6 @@ class TambahPelanggan : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-           }
         }
+    }
 }

@@ -2,18 +2,16 @@ package com.example.laundry.DataPelanggan
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.laundry.Pelanggan.TambahPelanggan
+import com.example.laundry.Pelanggan.adapter_data_pelanggan
 import com.example.laundry.R
-import com.example.laundry.adapter.adapter_data_pelanggan
 import com.example.laundry.modeldata.ModelPelanggan
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DataSnapshot
