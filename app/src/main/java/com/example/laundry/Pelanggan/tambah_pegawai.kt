@@ -28,9 +28,9 @@ class tambah_pegawai : AppCompatActivity() {
 
     private fun init() {
         etNamaP = findViewById(R.id.etnama)
-        etAlamatP = findViewById(R.id.etcabang)
+        etAlamatP = findViewById(R.id.etalamat)
         etNoHPP = findViewById(R.id.etnohp_pegawai)
-        etCabangP = findViewById(R.id.etstatus)
+        etCabangP = findViewById(R.id.etcabang)
         btSimpanP = findViewById(R.id.bttambah)
     }
 

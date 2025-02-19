@@ -26,4 +26,9 @@
     <string name="card_pelanggan_lihat">Lihat</string>
     <string name="card_pelanggan_nohp">Nomor Hp</string>
     <string name="card_pelanggan_cabang">Cabang</string>
+    <string name="add">Tambah</string>
+    <string name="nama_cabang">Nama Cabang</string>
+    <string name="layanan_harga">Layanan  harga</string>
+    <string name="berhasil_tambah_layanan">Berhasil Tambah Layanan</string>
+    <string name="layanan_tambah_gagal">Gagal Tambah Layanan</string>
 </resources>

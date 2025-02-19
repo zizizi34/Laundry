@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tambah_layanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Layanan.TambahLayanan"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvjudul_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Layanan"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:id="@+id/tvnama_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:text="@string/nama_lengkap"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etnama_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="35dp"
+        android:background="@drawable/roundedet"
+        android:hint="@string/nama_lengkap"
+        android:inputType="textPersonName"
+        android:padding="7dp"/>
+
+    <TextView
+        android:id="@+id/tvharga_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/layanan_harga"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etharga_layanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="35dp"
+        android:background="@drawable/roundedet"
+        android:hint="@string/layanan_harga"
+        android:padding="7dp"/>
+
+
+    <TextView
+        android:id="@+id/tvnama_cabang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nama_cabang"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etnama_cabang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="35dp"
+        android:background="@drawable/roundedet"
+        android:hint="@string/nama_cabang"
+        android:inputType="numberDecimal"
+        android:padding="7dp"/>
+
+    <Button
+        android:id="@+id/bttambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="50dp"
+        android:text="@string/add"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

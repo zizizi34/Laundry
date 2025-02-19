@@ -27,7 +27,8 @@ class adapter_data_pelanggan(private val listPelanggan: ArrayList<ModelPelanggan
         holder.tvNama.text = item.tvDataNamaPelanggan
         holder.tvAlamat.text = item.tvDataAlamatPelanggan
         holder.tvNoHP.text = item.tvDataNoHpPelanggan
-        holder.tvTerdaftar.text = item.terdaftar
+        holder.tvCabang.text = item.tvCabang
+//        holder.tvTerdaftar.text = item.terdaftar
         holder.cvCARD.setOnClickListener(){
         }
         holder.btHubungi.setOnClickListener{
@@ -42,10 +43,9 @@ class adapter_data_pelanggan(private val listPelanggan: ArrayList<ModelPelanggan
         val tvNama = itemView.findViewById<TextView>(R.id.tvDataNamaPelanggan)
         val tvAlamat = itemView.findViewById<TextView>(R.id.tvDataAlamatPelanggan)
         val tvNoHP = itemView.findViewById<TextView>(R.id.tvDataNoHpPelanggan)
-        val tvTerdaftar = itemView.findViewById<TextView>(R.id.tvTerdaftar_Pelanggan)
+        val tvCabang = itemView.findViewById<TextView>(R.id.tvCabang)
         val btHubungi = itemView.findViewById<Button>(R.id.btnHubungi)
         val btLihat = itemView.findViewById<Button>(R.id.btnLihat)
-        val etcabang = itemView.findViewById<TextView>(R.id.etcabang)
     }
 
     override fun getItemCount(): Int {

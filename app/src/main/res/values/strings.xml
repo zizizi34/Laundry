@@ -25,4 +25,9 @@
     <string name="card_pelanggan_lihat">card pelanggan lihat</string>
     <string name="card_pelanggan_nohp">card pelanggan nohp</string>
     <string name="card_pelanggan_cabang">card_pelanggan_cabang</string>
+    <string name="add">add</string>
+    <string name="nama_cabang">nama_cabang</string>
+    <string name="layanan_harga">layanan_harga</string>
+    <string name="berhasil_tambah_layanan">berhasil_tambah_layanan</string>
+    <string name="layanan_tambah_gagal">layanan_tambah_gagal</string>
 </resources>

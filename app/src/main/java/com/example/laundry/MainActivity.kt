@@ -9,8 +9,8 @@ import android.content.Intent
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.laundry.DataPelanggan.DataPelanggan
-
 import com.example.laundry.DataPelanggan.Data_pegawai
+import com.example.laundry.Layanan.DataLayanan
 
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val appDataLayanan = findViewById<CardView>(R.id.cardlayanan)
+        appDataLayanan.setOnClickListener{
+            val intent = Intent(this, DataLayanan::class.java)
+            startActivity(intent)
+        }
 
 
 
