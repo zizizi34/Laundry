@@ -33,42 +33,116 @@
             android:textSize="24sp"
             android:layout_marginTop="16dp"
             />
-        <TextView
-            android:id="@+id/tvDataAlamatPegawai"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/montserratregular"
             android:text="@string/card_pegawai_alamat"
             android:textSize="16sp"
             android:paddingTop="8dp"
             />
-        <TextView
-            android:id="@+id/tvDataNoHpPegawai"
+            <TextView
+                android:id="@+id/tvDataAlamatPegawai"
+                android:layout_width="0dp"
+                android:layout_weight="2.4"
+                android:layout_marginTop="13dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:text="Alamat Pegawai"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/montserratregular"
             android:text="@string/card_pelanggan_nohp"
             android:textSize="16sp"
             android:paddingTop="8dp"
             />
-        <TextView
-            android:id="@+id/tvDataTerdaftarPegawai"
+
+            <TextView
+                android:id="@+id/tvDataNoHpPegawai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.4"
+                android:fontFamily="@font/montserratregular"
+                android:text="No HP"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/montserratregular"
-            android:text="Terdaftar"
+            android:text="Terdaftar :"
             android:textSize="16sp"
             android:paddingTop="8dp"
             />
-        <TextView
-            android:id="@+id/tvDataCabangPegawai"
+            <TextView
+                android:id="@+id/tvDataTerdaftarPegawai"
+                android:layout_width="0dp"
+                android:layout_weight="2.4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:text="Terdaftar"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/montserratregular"
             android:text="@string/card_pelanggan_cabang"
             android:textSize="16sp"
             android:paddingTop="8dp"
             />
+
+
+            <TextView
+                android:id="@+id/tvDataCabangPegawai"
+                android:layout_width="0dp"
+                android:layout_weight="2.4"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:text="Cabang"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -52,6 +52,7 @@
         android:id="@+id/etharga_layanan"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:inputType="numberDecimal"
         android:layout_marginHorizontal="35dp"
         android:background="@drawable/roundedet"
         android:hint="@string/layanan_harga"
@@ -74,7 +75,6 @@
         android:layout_marginHorizontal="35dp"
         android:background="@drawable/roundedet"
         android:hint="@string/nama_cabang"
-        android:inputType="numberDecimal"
         android:padding="7dp"/>
 
     <Button

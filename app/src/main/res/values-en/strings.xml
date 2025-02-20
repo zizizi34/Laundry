@@ -21,11 +21,11 @@
     <string name="gagal_simpan_pegawai">failed to save employees</string>
     <string name="card_pegawai_id">"employee ID "</string>
     <string name="card_pegawai_nama">employee name</string>
-    <string name="card_pegawai_alamat">employee address</string>
+    <string name="card_pegawai_alamat">employee address :</string>
     <string name="card_pelanggan_hubungi">contact</string>
     <string name="card_pelanggan_lihat">Look</string>
-    <string name="card_pelanggan_nohp">phone number</string>
-    <string name="card_pelanggan_cabang">branch</string>
+    <string name="card_pelanggan_nohp">phone number :</string>
+    <string name="card_pelanggan_cabang">branch :</string>
     <string name="add">Add</string>
     <string name="nama_cabang">Branch Name</string>
     <string name="layanan_harga">price service</string>

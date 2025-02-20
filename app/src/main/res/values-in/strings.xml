@@ -21,11 +21,11 @@
     <string name="gagal_simpan_pegawai">gagal simpan pegawai</string>
     <string name="card_pegawai_id">" id pegawai"</string>
     <string name="card_pegawai_nama">nama pegawai</string>
-    <string name="card_pegawai_alamat">alamat pegawai</string>
+    <string name="card_pegawai_alamat">alamat pegawai :</string>
     <string name="card_pelanggan_hubungi">Hubungi</string>
     <string name="card_pelanggan_lihat">Lihat</string>
-    <string name="card_pelanggan_nohp">Nomor Hp</string>
-    <string name="card_pelanggan_cabang">Cabang</string>
+    <string name="card_pelanggan_nohp">Nomor Hp :</string>
+    <string name="card_pelanggan_cabang">Cabang :</string>
     <string name="add">Tambah</string>
     <string name="nama_cabang">Nama Cabang</string>
     <string name="layanan_harga">Layanan  harga</string>

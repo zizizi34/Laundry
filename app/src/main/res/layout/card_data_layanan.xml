@@ -31,22 +31,57 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvnama_layanan"
+        <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="3dp"
-            android:text="Nama Layanan"
+            android:text="Nama Layanan :"
             android:textSize="14sp"/>
-        <TextView
-            android:id="@+id/tvharga_layanan"
+
+            <TextView
+                android:id="@+id/tvnama_layanan"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="3dp"
+                android:text="Nama Layanan"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
             android:layout_marginVertical="3dp"
-            android:text="Layanan harga"
+            android:text="Layanan harga :"
             android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvharga_layanan"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="3dp"
+                android:text="Layanan harga"
+                android:textSize="14sp"/>
+        </LinearLayout>
         <TextView
             android:id="@+id/tvnama_cabang_layanan"
             android:layout_width="match_parent"
