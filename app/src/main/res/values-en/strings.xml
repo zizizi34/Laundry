@@ -28,7 +28,17 @@
     <string name="card_pelanggan_cabang">branch :</string>
     <string name="add">Add</string>
     <string name="nama_cabang">Branch Name</string>
-    <string name="layanan_harga">price service</string>
+    <string name="activity_layanan_harga">price service</string>
     <string name="berhasil_tambah_layanan">successfully added service</string>
     <string name="layanan_tambah_gagal">added service failed</string>
+    <string name="validasi_nama_pegawai">name cannot be empty</string>
+    <string name="validasi_alamat_pegawai">The address cannot be empty</string>
+    <string name="validasi_nohp_pegawai">cellphone number cannot be empty</string>
+    <string name="validasi_cabang_pegawai">branches cannot be empty</string>
+    <string name="activity_login_nohp">phone number</string>
+    <string name="activity_login_password">password</string>
+    <string name="activity_tambahpegawai">Added Employee</string>
+    <string name="activity_NamaLengkap">"Full name "</string>
+    <string name="activity_Alamat">Address</string>
+    <string name="Activity_Cabang">" Branch"</string>
 </resources>

@@ -28,7 +28,17 @@
     <string name="card_pelanggan_cabang">Cabang :</string>
     <string name="add">Tambah</string>
     <string name="nama_cabang">Nama Cabang</string>
-    <string name="layanan_harga">Layanan  harga</string>
+    <string name="activity_layanan_harga">Layanan  harga</string>
     <string name="berhasil_tambah_layanan">Berhasil Tambah Layanan</string>
     <string name="layanan_tambah_gagal">Gagal Tambah Layanan</string>
+    <string name="validasi_nama_pegawai">" nama tidak boleh kosong "</string>
+    <string name="validasi_alamat_pegawai">alamat tidak boleh kosong</string>
+    <string name="validasi_nohp_pegawai">no hp tidak boleh kosong</string>
+    <string name="validasi_cabang_pegawai">cabang tidak boleh kosong</string>
+    <string name="activity_login_nohp">No HP</string>
+    <string name="activity_login_password">Kata Sandi</string>
+    <string name="activity_tambahpegawai">Tambah Pegawai</string>
+    <string name="activity_NamaLengkap">Nama Lengkap</string>
+    <string name="activity_Alamat">Alamat</string>
+    <string name="Activity_Cabang">Alamat</string>
 </resources>

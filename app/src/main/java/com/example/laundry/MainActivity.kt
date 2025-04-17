@@ -11,6 +11,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.laundry.DataPelanggan.DataPelanggan
 import com.example.laundry.DataPelanggan.Data_pegawai
 import com.example.laundry.Layanan.DataLayanan
+import com.example.laundry.Laporan.DataLaporan
+import com.example.laundry.R
 
 
 class MainActivity : AppCompatActivity() {
@@ -36,6 +38,12 @@ class MainActivity : AppCompatActivity() {
         val appDataLayanan = findViewById<CardView>(R.id.cardlayanan)
         appDataLayanan.setOnClickListener{
             val intent = Intent(this, DataLayanan::class.java)
+            startActivity(intent)
+        }
+
+        val appDataLaporan = findViewById<ConstraintLayout>(R.id.cardlaporan)
+        appDataLaporan.setOnClickListener{
+            val intent = Intent(this, DataLaporan::class.java)
             startActivity(intent)
         }
 

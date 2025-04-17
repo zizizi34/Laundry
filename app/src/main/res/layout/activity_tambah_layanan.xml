@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="20dp"
-        android:text="@string/layanan_harga"
+        android:text="@string/activity_layanan_harga"
         android:textSize="18sp" />
 
     <EditText
@@ -55,7 +55,7 @@
         android:inputType="numberDecimal"
         android:layout_marginHorizontal="35dp"
         android:background="@drawable/roundedet"
-        android:hint="@string/layanan_harga"
+        android:hint="@string/activity_layanan_harga"
         android:padding="7dp"/>
 
 

@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
         <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Laporan.DataLaporan"
+            android:exported="false" />
+        <activity
             android:name=".Layanan.DataLayanan"
             android:exported="false" />
         <activity
@@ -22,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".DialogLihatPelanggan"
-            android:exported="false" />
-        <activity
-            android:name=".TambahLayanan.TambahLayanan"
             android:exported="false" />
         <activity
             android:name=".Pelanggan.LayananPelanggan"

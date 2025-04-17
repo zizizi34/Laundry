@@ -4,8 +4,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.FirebaseDatabase
 import com.example.laundry.R
+import com.google.firebase.database.FirebaseDatabase
 import com.example.laundry.modeldata.ModelPegawai
 
 class tambah_pegawai : AppCompatActivity() {
@@ -37,22 +37,22 @@ class tambah_pegawai : AppCompatActivity() {
     private fun cekValidasi(): Boolean {
         when {
             etNamaP.text.isEmpty() -> {
-                etNamaP.error = getString(R.string.validasi_nama_pelanggan)
+                etNamaP.error = getString(R.string.validasi_nama_pegawai)
                 etNamaP.requestFocus()
                 return false
             }
             etAlamatP.text.isEmpty() -> {
-                etAlamatP.error = getString(R.string.validasi_alamat_pelanggan)
+                etAlamatP.error = getString(R.string.validasi_alamat_pegawai)
                 etAlamatP.requestFocus()
                 return false
             }
             etNoHPP.text.isEmpty() -> {
-                etNoHPP.error = getString(R.string.validasi_nohp_pelanggan)
+                etNoHPP.error = getString(R.string.validasi_nohp_pegawai)
                 etNoHPP.requestFocus()
                 return false
             }
             etCabangP.text.isEmpty() -> {
-                etCabangP.error = getString(R.string.validasi_cabang_pelanggan)
+                etCabangP.error = getString(R.string.validasi_cabang_pegawai)
                 etCabangP.requestFocus()
                 return false
             }
