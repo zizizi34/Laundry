@@ -1,4 +1,4 @@
-package com.example.laundry.DataPelanggan
+package com.example.laundry.DataPegawai
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.laundry.Pelanggan.tambah_pegawai
+import com.example.laundry.Pegawai.Tambah_pegawai
 import com.example.laundry.R
 import com.example.laundry.adapter.adapter_data_pegawai
 import com.example.laundry.modeldata.ModelPegawai
@@ -40,7 +40,7 @@ class Data_pegawai : AppCompatActivity() {
         // Redirect ke halaman pegawai
         val tambahPegawai = findViewById<FloatingActionButton>(R.id.fab_tambah)
         tambahPegawai.setOnClickListener {
-            val intent = Intent(this, tambah_pegawai::class.java)
+            val intent = Intent(this, Tambah_pegawai::class.java)
             startActivity(intent)
         }
 

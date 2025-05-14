@@ -127,10 +127,10 @@ class TambahPelanggan : AppCompatActivity() {
 
         val data = ModelPelanggan(
             id_pelanggan = pelangganId,
-            NamaPelanggan = etNama.text.toString(),
-            AlamatPelanggan = etAlamat.text.toString(),
-            NoHpPelanggan = etNoHP.text.toString(),
-            Cabang = etCabang.text.toString(),
+            namaPelanggan = etNama.text.toString(),
+            alamatPelanggan = etAlamat.text.toString(),
+            noHpPelanggan = etNoHP.text.toString(),
+            cabang = etCabang.text.toString(),
             timestamp
         )
 

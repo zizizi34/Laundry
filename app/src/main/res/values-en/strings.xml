@@ -41,4 +41,6 @@
     <string name="activity_NamaLengkap">"Full name "</string>
     <string name="activity_Alamat">Address</string>
     <string name="Activity_Cabang">" Branch"</string>
+    <string name="card_pelanggan_alamat">address</string>
+    <string name="card_pelanggan_nama">Name</string>
 </resources>

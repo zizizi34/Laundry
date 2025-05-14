@@ -40,4 +40,6 @@
     <string name="activity_NamaLengkap">activity_NamaLengkap</string>
     <string name="activity_Alamat">activity_Alamat</string>
     <string name="Activity_Cabang">Activity_Cabang</string>
+    <string name="card_pelanggan_alamat">card_pelanggan_alamat</string>
+    <string name="card_pelanggan_nama">card_pelanggan_nama</string>
 </resources>

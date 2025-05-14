@@ -24,11 +24,10 @@ class adapter_data_pelanggan(private val listPelanggan: ArrayList<ModelPelanggan
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = listPelanggan[position]
         holder.tvID.text = item.id_pelanggan
-        holder.tvNama.text = item.NamaPelanggan
-        holder.tvAlamat.text = item.AlamatPelanggan
-        holder.tvNoHP.text = item.NoHpPelanggan
-        holder.tvCabang.text = item.Cabang
-        holder.tvTerdaftar.text = item.terdaftar
+        holder.tvNama.text = item.namaPelanggan
+        holder.tvAlamat.text = item.alamatPelanggan
+        holder.tvNoHP.text = item.noHpPelanggan
+        holder.tvCabang.text = item.cabang
         holder.cvCARD.setOnClickListener(){
         }
         holder.btHubungi.setOnClickListener{
@@ -43,7 +42,6 @@ class adapter_data_pelanggan(private val listPelanggan: ArrayList<ModelPelanggan
         val tvNama = itemView.findViewById<TextView>(R.id.tvDataNamaPelanggan)
         val tvAlamat = itemView.findViewById<TextView>(R.id.tvDataAlamatPelanggan)
         val tvNoHP = itemView.findViewById<TextView>(R.id.tvDataNoHpPelanggan)
-        val tvTerdaftar = itemView.findViewById<TextView>(R.id.tvTerdaftarPelanggan)
         val tvCabang = itemView.findViewById<TextView>(R.id.tvCabang)
         val btHubungi = itemView.findViewById<Button>(R.id.btnHubungi)
         val btLihat = itemView.findViewById<Button>(R.id.btnLihat)

@@ -1,4 +1,4 @@
-package com.example.laundry.Pelanggan
+package com.example.laundry.Pegawai
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -8,7 +8,7 @@ import com.example.laundry.R
 import com.google.firebase.database.FirebaseDatabase
 import com.example.laundry.modeldata.ModelPegawai
 
-class tambah_pegawai : AppCompatActivity() {
+class Tambah_pegawai : AppCompatActivity() {
     private val database = FirebaseDatabase.getInstance()
     private val myRef = database.getReference("pegawai")
 

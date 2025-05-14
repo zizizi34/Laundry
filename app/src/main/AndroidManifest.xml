@@ -8,12 +8,21 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/laundryicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/laundryicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
+        <activity
+            android:name=".Transaksi.PilihPelanggan"
+            android:exported="false" />
+        <activity
+            android:name=".Transaksi.PilihLayanan"
+            android:exported="false" />
+        <activity
+            android:name=".Transaksi.DataTranssaksiActivity"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
@@ -29,14 +38,12 @@
         <activity
             android:name=".DialogLihatPelanggan"
             android:exported="false" />
+
         <activity
-            android:name=".Pelanggan.LayananPelanggan"
+            android:name=".Pegawai.Tambah_pegawai"
             android:exported="false" />
         <activity
-            android:name=".Pelanggan.tambah_pegawai"
-            android:exported="false" />
-        <activity
-            android:name=".DataPelanggan.Data_pegawai"
+            android:name=".DataPegawai.Data_pegawai"
             android:exported="false" />
         <activity
             android:name=".DataPelanggan.DataPelanggan"

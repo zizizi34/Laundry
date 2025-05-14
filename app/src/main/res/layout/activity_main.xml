@@ -131,7 +131,7 @@
                         android:id="@+id/imgPelanggan"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/custumerputih"
+                        android:src="@drawable/pelanggan"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
@@ -164,7 +164,7 @@
                         android:id="@+id/imgLaporan"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/laporanhitam"
+                        android:src="@drawable/laporan"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
@@ -365,7 +365,7 @@
                 android:id="@+id/imgpegawai"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/user"
+                android:src="@drawable/pegawai"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />

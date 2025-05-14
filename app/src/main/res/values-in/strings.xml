@@ -40,5 +40,7 @@
     <string name="activity_tambahpegawai">Tambah Pegawai</string>
     <string name="activity_NamaLengkap">Nama Lengkap</string>
     <string name="activity_Alamat">Alamat</string>
-    <string name="Activity_Cabang">Alamat</string>
+    <string name="Activity_Cabang">Cabang</string>
+    <string name="card_pelanggan_alamat">Alamat</string>
+    <string name="card_pelanggan_nama">Nama</string>
 </resources>
