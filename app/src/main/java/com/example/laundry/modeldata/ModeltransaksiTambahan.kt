@@ -1,4 +1,10 @@
 package com.example.laundry.modeldata
 
-class ModeltransaksiTambahan {
-}
+import java.io.Serializable
+
+class ModeltransaksiTambahan(
+    val idLayanan: String? = "",
+    val namaLayanan: String? = "",
+    val hargaLayanan: String? = "",
+    val tanggalTerdaftar: String? = ""
+) : Serializable

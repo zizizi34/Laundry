@@ -15,6 +15,18 @@
         android:theme="@style/Theme.Laundry"
         tools:targetApi="31">
         <activity
+            android:name=".Transaksi.KonfirmasiTransaksi"
+            android:exported="false" />
+        <activity
+            android:name=".Transaksi.PilihTambahan"
+            android:exported="false" />
+        <activity
+            android:name=".Tambahan.TambahTambahan"
+            android:exported="false" />
+        <activity
+            android:name=".Tambahan.DataTambahan"
+            android:exported="false" />
+        <activity
             android:name=".Transaksi.PilihPelanggan"
             android:exported="false" />
         <activity
@@ -38,7 +50,6 @@
         <activity
             android:name=".DialogLihatPelanggan"
             android:exported="false" />
-
         <activity
             android:name=".Pegawai.Tambah_pegawai"
             android:exported="false" />

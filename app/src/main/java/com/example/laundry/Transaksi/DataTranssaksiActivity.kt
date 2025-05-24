@@ -13,13 +13,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.FirebaseApp
 import com.example.laundry.R
 import com.example.laundry.modeldata.ModeltransaksiTambahan
-import com.example.laundry.Pelanggan.TambahPelanggan
-import com.example.laundry.Transaksi.PilihLayanan
-import com.example.laundry.Transaksi.PilihPelanggan
-
+import com.google.firebase.FirebaseApp
 
 class DataTranssaksiActivity : AppCompatActivity() {
     private lateinit var tvPelangganNama: TextView
@@ -30,6 +26,7 @@ class DataTranssaksiActivity : AppCompatActivity() {
     private lateinit var btnPilihPelanggan: Button
     private lateinit var btnPilihLayanan: Button
     private lateinit var btnTambahan: Button
+    private lateinit var btn_proses: Button
     private val dataList = mutableListOf<ModeltransaksiTambahan>()
 
     private val pilihPelanggan = 1
@@ -46,6 +43,7 @@ class DataTranssaksiActivity : AppCompatActivity() {
     private var idPegawai: String = ""
 
     private lateinit var sharedPref: SharedPreferences
+
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,9 +69,18 @@ class DataTranssaksiActivity : AppCompatActivity() {
             startActivityForResult(intent,pilihLayanan)
         }
         btnTambahan.setOnClickListener {
-            val intent = Intent(this, PilihLayanan::class.java)
+            val intent = Intent(this, PilihTambahan::class.java)
             startActivityForResult(intent,pilihLayananTambahan)
         }
+        btn_proses.setOnClickListener{
+            val intent = Intent(this, KonfirmasiTransaksi::class.java)
+            intent.putExtra("namaPelanggan", namaPelanggan)
+            intent.putExtra("noHP", noHP)
+            intent.putExtra("namaLayanan", namaLayanan)
+            intent.putExtra("hargaLayanan", hargaLayanan)
+            intent.putExtra("listTambahan", ArrayList(dataList)) // <--- penting
+            startActivity(intent)}
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -89,6 +96,7 @@ class DataTranssaksiActivity : AppCompatActivity() {
         btnPilihPelanggan = findViewById(R.id.btn_pilih_pelanggan)
         btnPilihLayanan = findViewById(R.id.btn_pilih_layanan)
         btnTambahan = findViewById(R.id.btn_tambahan)
+        btn_proses = findViewById(R.id.btn_proses)
     }
     @Deprecated( "This method has been deprecated in favor of using the Activity Result API")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -96,8 +104,8 @@ class DataTranssaksiActivity : AppCompatActivity() {
         if (requestCode == pilihPelanggan) {
             if (resultCode == RESULT_OK && data != null) {
                 idPelanggan = data.getStringExtra("idPelanggan").toString()
-                val nama = data.getStringExtra("nama")
-                val nomorHP = data.getStringExtra("noHP")
+                val nama = data.getStringExtra("namaPelanggan")
+                val nomorHP = data.getStringExtra("noHPPelanggan")
 
                 tvPelangganNama.text = "Nama Pelanggan : $nama"
                 tvPelangganNoHP.text = "No HP : $nomorHP"
@@ -108,7 +116,45 @@ class DataTranssaksiActivity : AppCompatActivity() {
             if (resultCode == RESULT_CANCELED) {
                 Toast.makeText(this, "Batal Memilih Pelanggan", Toast.LENGTH_SHORT).show()
             }
+        }
+        if (requestCode == pilihLayanan) {
+            if (resultCode == RESULT_OK && data != null) {
+                idLayanan = data.getStringExtra("idLayanan").toString()
+                val nama = data.getStringExtra("namaLayanan")
+                val harga = data.getStringExtra("hargaLayanan")
+
+                tvLayananNama.text = "Layanan : $nama"
+                tvLayananHarga.text = "Harga : Rp. $harga"
+
+                namaLayanan = nama.toString()
+                hargaLayanan = harga.toString()
+            }
+            if (resultCode == RESULT_CANCELED) {
+                Toast.makeText(this, "Batal Memilih Layanan", Toast.LENGTH_SHORT).show()
             }
         }
+        if (requestCode == pilihLayananTambahan) {
+            if (resultCode == RESULT_OK && data != null) {
+                val id = data.getStringExtra("idLayanan").toString()
+                val nama = data.getStringExtra("namaLayanan").toString()
+                val harga = data.getStringExtra("hargaLayanan").toString()
+
+                val tambahan = ModeltransaksiTambahan(id, nama, harga)
+                dataList.add(tambahan)
+
+                // Update RecyclerView
+                rvLayananTambahan.adapter = com.example.laundry.adapter.adapter_pilih_tambahan(dataList) { selectedTambahan ->
+                    // optional: aksi kalau diklik lagi
+                }
+            }
+            if (resultCode == RESULT_CANCELED) {
+                Toast.makeText(this, "Batal Memilih Tambahan", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+
+
+
+    }
 
 }
