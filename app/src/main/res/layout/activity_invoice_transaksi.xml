@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_header_nama_usaha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laundry Speed"
+                    android:fontFamily="@font/monsterratbold"
+                    android:textSize="22sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_header_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colomadu"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppinsregular" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Informasi Transaksi -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_info_transaksi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/card_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_id_transaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID Transaksi"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_tanggal_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_nama_pelanggan_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pesanan"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_no_hp_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karyawan"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Layanan Utama -->
+        <LinearLayout
+            android:id="@+id/layout_layanan_utama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/card_info_transaksi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_nama_layanan_invoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cuci Setrika 5kg"
+                android:textSize="18sp"
+                android:fontFamily="@font/monsterratbold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_harga_layanan_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp40.000,00"
+                android:textSize="18sp"
+                android:fontFamily="@font/monsterratbold"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+        <!-- Label Tambahan -->
+        <TextView
+            android:id="@+id/tv_label_rincian_tambahan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rincian Tambahan"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:fontFamily="@font/monsterratbold"
+            app:layout_constraintTop_toBottomOf="@id/layout_layanan_utama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- List Tambahan -->
+        <LinearLayout
+            android:id="@+id/layout_list_tambahan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_rincian_tambahan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Subtotal -->
+        <TextView
+            android:id="@+id/tv_tambahan_invoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subtotal Tambahan: Rp14.000,00"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:fontFamily="@font/poppinsregular"
+            app:layout_constraintTop_toBottomOf="@id/layout_list_tambahan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Total Pembayaran -->
+        <LinearLayout
+            android:id="@+id/layout_total_pembayaran"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="76dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_tambahan_invoice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_total_bayar_invoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Bayar"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_metode_pembayaran_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp54.000,00"
+                android:textSize="18sp"
+                android:fontFamily="@font/monsterratbold" />
+        </LinearLayout>
+
+        <!-- Tombol Aksi -->
+        <GridLayout
+            android:id="@+id/layout_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_marginTop="28dp"
+            android:paddingHorizontal="12dp"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            app:layout_constraintTop_toBottomOf="@id/layout_total_pembayaran"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/btn_kirim_wa"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="Kirim WhatsApp"
+                android:fontFamily="@font/monsterratbold"
+                android:backgroundTint="#25D366"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_cetak_invoice"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="Cetak Invoice"
+                android:fontFamily="@font/monsterratbold"
+                android:backgroundTint="#2196F3"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_selesai"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="Selesai"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/monsterratbold"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white" />
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
