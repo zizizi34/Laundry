@@ -26,6 +26,13 @@
             android:fontFamily="@font/poppinssemibolditalic"
             android:layout_marginBottom="8dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laundry Speed ⚡"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"/>
+
         <View
             android:layout_width="60dp"
             android:layout_height="4dp"

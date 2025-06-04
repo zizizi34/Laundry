@@ -12,6 +12,7 @@ import com.example.laundry.DataPelanggan.DataPelanggan
 import com.example.laundry.DataPegawai.Data_pegawai
 import com.example.laundry.Layanan.DataLayanan
 import com.example.laundry.Laporan.DataLaporan
+import com.example.laundry.Profile.Akun
 import com.example.laundry.R
 import com.example.laundry.Tambahan.DataTambahan
 import com.example.laundry.Transaksi.DataTranssaksiActivity
@@ -61,6 +62,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DataTambahan::class.java)
             startActivity(intent)
         }
+
+        val appAkun = findViewById<CardView>(R.id.cardAkun)
+        appAkun.setOnClickListener{
+            val intent = Intent(this, Akun::class.java)
+            startActivity(intent)
+        }
+
+
 
 
 

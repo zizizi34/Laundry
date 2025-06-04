@@ -10,15 +10,7 @@
     android:background="#FAF6F9">
 
     <!-- Search Bar -->
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:queryHint="Cari Data Pelanggan"
-        android:iconifiedByDefault="false"
-        android:background="@drawable/rounded_white"
-        android:layout_marginBottom="8dp"
-        android:elevation="4dp"/>
+
 
     <!-- RecyclerView for list -->
     <androidx.recyclerview.widget.RecyclerView
@@ -29,6 +21,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="16dp"
         tools:listitem="@layout/card_data_transaksi_pelanggan" />
 </LinearLayout>

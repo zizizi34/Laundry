@@ -21,7 +21,8 @@
         android:layout_gravity="top"
         card_view:cardCornerRadius="24dp"
         card_view:cardElevation="8dp"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:padding="24dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,83 +34,82 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Silahkan Register Terlebih Dahulu"
+                android:textSize="20sp"
                 android:fontFamily="@font/montserratextrabold"
-                android:text="Silahkan Login  Terlebih Dahulu"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textColor="#000000" />
 
             <!-- Subjudul -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/poppinsregular"
                 android:text="Selamat Datang Di laundrySpeed"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
                 android:textColor="#666666"
-                android:textSize="14sp" />
+                android:fontFamily="@font/poppinsregular" />
 
-            <!-- Label Nama -->
+            <!-- Label No. Telp -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/monsterratbold"
                 android:text=" Nama :"
-                android:textColor="#666666" />
+                android:layout_marginTop="16dp"
+                android:textColor="#666666"
+                android:fontFamily="@font/monsterratbold" />
 
-            <!-- Input Nama -->
+            <!-- Input No HP -->
             <EditText
-                android:id="@+id/editTextName"
+                android:id="@+id/editTextNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/roundedet"
-                android:fontFamily="@font/poppinslightitalic"
                 android:hint="Masukkan Nama Anda"
+                android:fontFamily="@font/poppinslightitalic"
+                android:textSize="16dp"
+                android:layout_marginBottom="16dp"
                 android:padding="14dp"
-                android:textSize="16dp" />
+                android:background="@drawable/roundedet" />
 
             <!-- Label Password -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/monsterratbold"
                 android:text="Password :"
-                android:textColor="#666666" />
+                android:textColor="#666666"
+                android:fontFamily="@font/monsterratbold" />
 
             <!-- Input Password -->
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/roundedet"
-                android:fontFamily="@font/poppinslightitalic"
                 android:hint="Masukkan Password Anda"
                 android:inputType="textPassword"
+                android:fontFamily="@font/poppinslightitalic"
+                android:textSize="16dp"
                 android:padding="14dp"
-                android:textSize="16dp" />
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedet" />
 
-            <!-- Link Register -->
+            <!-- Tombol Lanjutkan -->
             <TextView
-                android:id="@+id/tv_register"
+                android:id="@+id/tv_login_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/poppinsregular"
-                android:text="Belum Mempunyai Akun? Daftar Dulu YUK!"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:text="Sudah Mempunyai Akun? Langsung Masuk Aja!" />
 
-            <!-- Tombol Login -->
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#4338ca"
+                android:text="Register"
                 android:fontFamily="@font/monsterratbold"
-                android:padding="14dp"
-                android:text="LANJUTKAN"
-                android:textColor="#FFFFFF" />
+                android:backgroundTint="#4338ca"
+                android:textColor="#FFFFFF"
+                android:padding="14dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

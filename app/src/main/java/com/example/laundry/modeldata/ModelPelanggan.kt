@@ -8,5 +8,4 @@ data class ModelPelanggan(
     val cabang: String? = null,
     val terdaftar_pelanggan: String? = null,
     val btDataHubungiPelanggan: String? = null,
-    val terdaftar: String? = null
 )

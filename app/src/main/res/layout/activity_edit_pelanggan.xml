@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_EditPelanggan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserratextrabold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/et_edit_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nama_lengkap"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="text"
+        android:background="@drawable/roundedet"
+        android:padding="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_alamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Alamat"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="textPostalAddress"
+        android:padding="16dp"
+        android:background="@drawable/roundedet"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_nama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_hp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundedet"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="@string/No_Hp_aktif"
+        android:inputType="phone"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_alamat"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <EditText
+        android:id="@+id/et_editcabang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_cabang"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="16dp"
+        android:background="@drawable/roundedet"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_alamat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_simpan"
+        android:padding="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/monsterratbold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_hp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

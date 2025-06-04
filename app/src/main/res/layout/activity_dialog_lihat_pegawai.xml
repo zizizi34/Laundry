@@ -25,7 +25,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sunting_DetailPelanggan"
+                    android:text="@string/lihatpegawai_DetailPegawai"
                     android:layout_margin="10dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -45,16 +45,16 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/sunting_idpelanggan"
+                        android:text="@string/lihatpegawai_IDPegawai"
                         android:gravity="start"
                         android:fontFamily="@font/monsterratbold"/>
 
                     <TextView
-                        android:id="@+id/tv_ID_PELANGGAN"
+                        android:id="@+id/tv_ID_PEGAWAI"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/sunting_idpelanggan"
+                        android:text="@string/lihatpegawai_IDPegawai"
                         android:fontFamily="@font/montserratregular"
                         android:gravity="end" />
                 </LinearLayout>
@@ -72,18 +72,18 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/sunting_namapelanggan"
+                        android:text="@string/lihatpegawai_NamaPegawai"
                         android:fontFamily="@font/monsterratbold"
                         android:gravity="start" />
 
                     <TextView
-                        android:id="@+id/tv_NAMA"
+                        android:id="@+id/tv_NAMAPEGAWAI"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/montserratregular"
                         android:gravity="end"
-                        android:text="@string/sunting_namapelanggan" />
+                        android:text="@string/lihatpegawai_NamaPegawai" />
                 </LinearLayout>
 
                 <LinearLayout
