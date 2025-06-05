@@ -86,4 +86,8 @@
     <string name="main_Tambahan">Addition</string>
     <string name="main_Layanan">Service</string>
     <string name="main_Siapmelayanipelanggandengansetulushati">Ready to serve customers with sincerity</string>
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+    <string name="greeting_night">Good Night</string>
 </resources>

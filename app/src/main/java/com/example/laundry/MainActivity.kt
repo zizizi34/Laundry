@@ -16,7 +16,10 @@ import com.example.laundry.Profile.Akun
 import com.example.laundry.R
 import com.example.laundry.Tambahan.DataTambahan
 import com.example.laundry.Transaksi.DataTranssaksiActivity
-
+import java.time.LocalTime
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +27,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-
-//        redirect to pelanggan
+        // redirect to pelanggan
         val appDataPelanggan = findViewById<ConstraintLayout>(R.id.clPelanggan)
         appDataPelanggan.setOnClickListener{
             val intent = Intent(this, DataPelanggan::class.java)
@@ -56,7 +58,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
         val appTambahan = findViewById<CardView>(R.id.cardtambahan)
         appTambahan.setOnClickListener{
             val intent = Intent(this, DataTambahan::class.java)
@@ -69,18 +70,26 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-
-
-
-
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    private fun getGreetingMessage(): String {
+        val currentTime = LocalTime.now()
+        return when {
+            currentTime.hour in 5..10 -> getString(R.string.greeting_morning)
+            currentTime.hour in 11..14 -> getString(R.string.greeting_afternoon)
+            currentTime.hour in 15..18 -> getString(R.string.greeting_evening)
+            else -> getString(R.string.greeting_night)
+        }
+    }
+
+    private fun getCurrentDate(): String {
+        val currentDate = LocalDate.now()
+        val formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale.getDefault())
+        return currentDate.format(formatter)
     }
 }

@@ -86,4 +86,8 @@
     <string name="main_Tambahan">Tambahan</string>
     <string name="main_Layanan">Layanan</string>
     <string name="main_Siapmelayanipelanggandengansetulushati">Siap Melayani Pelanggan Dengan Setulus Hati</string>
+    <string name="greeting_morning">Selamat Pagi</string>
+    <string name="greeting_afternoon">Selamat Siang</string>
+    <string name="greeting_evening">Selamat Sore</string>
+    <string name="greeting_night">Selamat Malam</string>
 </resources>

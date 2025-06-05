@@ -11,7 +11,7 @@
         android:id="@+id/tvhello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat Pagi Bos Naren"
+        android:text="@string/greeting_morning"
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="@color/black"

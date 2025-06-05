@@ -85,4 +85,8 @@
     <string name="main_Tambahan">main_Tambahan</string>
     <string name="main_Layanan">main_Layanan</string>
     <string name="main_Siapmelayanipelanggandengansetulushati">main_Siapmelayanipelanggandengansetulushati</string>
+    <string name="greeting_morning">greeting_morning</string>
+    <string name="greeting_afternoon">greeting_afternoon</string>
+    <string name="greeting_evening">greeting_evening</string>
+    <string name="greeting_night">greeting_night</string>
 </resources>
