@@ -11,7 +11,7 @@
 
     <!-- Data Pelanggan -->
     <TextView
-        android:text="Data Pelanggan"
+        android:text="@string/datatransaksi_DataPelanggan"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#333"
@@ -21,14 +21,14 @@
 
     <TextView
         android:id="@+id/tvNamaPelanggan"
-        android:text="Nama Pelanggan:"
+        android:text="@string/datatransaksi_NamaPelanggan"
         android:fontFamily="@font/monsterratbold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/tvPelangganNoHP"
-        android:text="No HP:"
+        android:text="@string/datatransaksi_NoHP"
         android:fontFamily="@font/monsterratbold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -37,7 +37,7 @@
         android:id="@+id/btn_pilih_pelanggan"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Pilih Pelanggan"
+        android:text="@string/datatransaksi_PilihPelanggan"
         android:fontFamily="@font/montserratregular"
         android:textColor="#fff"
         android:backgroundTint="#4CCEFF"
@@ -45,7 +45,7 @@
 
     <!-- Layanan Utama -->
     <TextView
-        android:text="Layanan Utama"
+        android:text="@string/datatransaksi_LayananUtama"
         android:fontFamily="@font/montserratextrabold"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -56,14 +56,14 @@
 
     <TextView
         android:id="@+id/tvNamaLayanan"
-        android:text="Nama Layanan:"
+        android:text="@string/datatransaksi_NamaLayanan"
         android:fontFamily="@font/monsterratbold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/tvLayananHarga"
-        android:text="Harga:"
+        android:text="@string/datatransaksi_Harga"
         android:fontFamily="@font/monsterratbold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -72,7 +72,7 @@
         android:id="@+id/btn_pilih_layanan"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="Pilih Layanan"
+        android:text="@string/datatransaksi_pilihlayanan"
         android:textColor="#fff"
         android:backgroundTint="#4CCEFF"
         android:layout_marginTop="8dp"
@@ -80,7 +80,7 @@
 
     <!-- Layanan Tambahan -->
     <TextView
-        android:text="Layanan Tambahan"
+        android:text="@string/datatransaksi_LayananTambahan"
         android:fontFamily="@font/montserratextrabold"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -111,7 +111,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Tambahan"
+            android:text="@string/datatransaksi_Tambahan"
             android:textColor="#fff"
             android:backgroundTint="#FFC107"/>
 
@@ -120,7 +120,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Proses"
+            android:text="@string/datatransaksi_proses"
             android:textColor="#fff"
             android:backgroundTint="#4CAF50"
             android:layout_marginStart="8dp"/>

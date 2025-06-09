@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="3dp"
-            android:text="Nama Layanan :"
+            android:text="@string/layanan_NamaLayanan"
             android:textSize="14sp"/>
 
             <TextView
@@ -68,7 +68,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
             android:layout_marginVertical="3dp"
-            android:text="Layanan harga :"
+            android:text="@string/layanan_HargaLayanan"
             android:textSize="14sp"/>
 
             <TextView
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="3dp"
-            android:text="Nama Cabang layanan"
+            android:text="@string/layanan_NamaCabanglayanan"
             android:textSize="14sp"/>
 
     </LinearLayout>

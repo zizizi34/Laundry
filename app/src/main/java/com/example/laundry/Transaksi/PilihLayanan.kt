@@ -51,6 +51,7 @@ class PilihLayanan: AppCompatActivity() {
                     intent.putExtra("idLayanan", selectedLayanan.id_layanan)
                     intent.putExtra("namaLayanan", selectedLayanan.nama_layanan)
                     intent.putExtra("hargaLayanan", selectedLayanan.harga_layanan)
+                    intent.putExtra("namacabanglayanan", selectedLayanan.cabang)
                     setResult(RESULT_OK, intent)
                     finish()
                 }

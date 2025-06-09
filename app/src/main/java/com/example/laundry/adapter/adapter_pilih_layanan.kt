@@ -23,11 +23,13 @@ class adapter_pilih_layanan(
         val tvNama: TextView = itemView.findViewById(R.id.tvnama_layanan)
         val tvID: TextView = itemView.findViewById(R.id.tvidlayanan)
         val tvHarga: TextView = itemView.findViewById(R.id.tvharga_layanan)
+        val tvnama_cabang_layanan: TextView = itemView.findViewById(R.id.tvnama_cabang_layanan)
 
         fun bind(layanan: ModelLayanan) {
             tvNama.text = layanan.nama_layanan
             tvID.text = "ID: ${layanan.id_layanan}"
             tvHarga.text = "Harga: ${layanan.harga_layanan}"
+            tvnama_cabang_layanan.text = "Cabang: ${layanan.cabang}"
 
             itemView.setOnClickListener {
                 onItemClick(layanan)

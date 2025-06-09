@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="@font/montserratregular"
-        android:text="Alamat :"
+        android:text="@string/card_pelanggan_alamat"
         android:textSize="16sp"
         android:paddingTop="8dp"
         />
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="@font/montserratregular"
-            android:text="Alamat"
+            android:text="@string/card_pelanggan_alamat"
             android:textSize="16sp"
             android:paddingTop="8dp"
             />
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="@font/montserratregular"
-        android:text="No HP  :"
+        android:text="@string/card_pelanggan_nohp"
         android:textSize="16sp"
         android:paddingTop="8dp"
         />
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="@font/montserratregular"
-        android:text="Cabang :"
+        android:text="@string/card_pelanggan_cabang"
         android:textSize="16sp"
         android:paddingTop="8dp"
         />
@@ -129,7 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/montserratregular"
-            android:text="Terdaftar :"
+            android:text="@string/datapelanggan_Terdaftar"
             android:textSize="16sp"
             android:paddingTop="8dp"
             />
@@ -159,7 +159,7 @@
             android:backgroundTint="#22c55e"
             android:padding="16dp"
             android:fontFamily="@font/montserratregular"
-            android:text="Hubungi"
+            android:text="@string/card_pelanggan_hubungi"
             android:layout_marginRight="5dp"/>
         <Button
             android:layout_weight="1"
@@ -170,7 +170,7 @@
             android:padding="16dp"
             android:fontFamily="@font/montserratregular"
             android:layout_marginLeft="5dp"
-            android:text="Lihat"/>
+            android:text="@string/card_pelanggan_lihat"/>
     </LinearLayout>
 </LinearLayout>
 </androidx.cardview.widget.CardView>
