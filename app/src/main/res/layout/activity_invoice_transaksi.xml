@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
             android:layout_marginBottom="30dp"
             app:cardElevation="6dp"
             app:cardCornerRadius="12dp"
-            android:backgroundTint="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -37,8 +35,7 @@
                     android:text="Laundry Speed"
                     android:fontFamily="@font/monsterratbold"
                     android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/tv_header_alamat"
@@ -60,7 +57,6 @@
             app:cardCornerRadius="12dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="2dp"
-            android:backgroundTint="@color/white"
             app:layout_constraintTop_toBottomOf="@id/card_header"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -77,9 +73,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/invoice_IDTransaksi"
                     android:fontFamily="@font/monsterratbold"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/tv_tanggal_invoice"
@@ -107,8 +101,7 @@
                     android:text="@string/invoice_nohp"
                     android:fontFamily="@font/poppinsregular"
                     android:textSize="14sp"
-                    android:layout_marginTop="4dp"
-                    android:textColor="@color/black" />
+                    android:layout_marginTop="4dp"/>
 
                 <!-- TextView untuk Status -->
                 <TextView
@@ -118,8 +111,7 @@
                     android:text="@string/invoice_status"
                     android:fontFamily="@font/poppinsregular"
                     android:textSize="14sp"
-                    android:layout_marginTop="4dp"
-                    android:textColor="@color/black" />
+                    android:layout_marginTop="4dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -149,8 +141,7 @@
                 android:text="Cuci Setrika 5kg"
                 android:fontFamily="@font/monsterratbold"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_harga_layanan_invoice"
@@ -173,7 +164,6 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:padding="12dp"
-            android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/layout_layanan_utama"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -237,8 +227,7 @@
                 android:text="@string/invoice_TotalBayar"
                 android:fontFamily="@font/monsterratbold"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_metode_pembayaran_invoice"

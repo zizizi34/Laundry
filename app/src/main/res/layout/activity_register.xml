@@ -36,8 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="Silahkan Register Terlebih Dahulu"
                 android:textSize="20sp"
-                android:fontFamily="@font/montserratextrabold"
-                android:textColor="#000000" />
+                android:fontFamily="@font/montserratextrabold"/>
 
             <!-- Subjudul -->
             <TextView
@@ -46,7 +45,6 @@
                 android:text="Selamat Datang Di laundrySpeed"
                 android:textSize="14sp"
                 android:layout_marginTop="8dp"
-                android:textColor="#666666"
                 android:fontFamily="@font/poppinsregular" />
 
             <!-- Label No. Telp -->
@@ -55,7 +53,6 @@
                 android:layout_height="wrap_content"
                 android:text=" Nama :"
                 android:layout_marginTop="16dp"
-                android:textColor="#666666"
                 android:fontFamily="@font/monsterratbold" />
 
             <!-- Input No HP -->
@@ -75,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Password :"
-                android:textColor="#666666"
                 android:fontFamily="@font/monsterratbold" />
 
             <!-- Input Password -->

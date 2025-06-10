@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="16dp"
-    android:background="#FFF4F9">
+    android:padding="16dp">
 
     <!-- Kolom Kiri -->
     <LinearLayout
@@ -22,7 +21,6 @@
             android:text="Data Pelanggan"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#333"
             android:fontFamily="@font/montserratextrabold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -58,7 +56,6 @@
             android:fontFamily="@font/montserratextrabold"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#333"
             android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -103,7 +100,6 @@
             android:fontFamily="@font/montserratextrabold"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

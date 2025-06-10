@@ -35,7 +35,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratextrabold"
                 android:text="Silahkan Login  Terlebih Dahulu"
-                android:textColor="#000000"
                 android:textSize="20sp" />
 
             <!-- Subjudul -->
@@ -45,7 +44,6 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppinsregular"
                 android:text="Selamat Datang Di laundrySpeed"
-                android:textColor="#666666"
                 android:textSize="14sp" />
 
             <!-- Label Nama -->
@@ -54,8 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/monsterratbold"
-                android:text=" Nama :"
-                android:textColor="#666666" />
+                android:text=" Nama :" />
 
             <!-- Input Nama -->
             <EditText
@@ -74,8 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/monsterratbold"
-                android:text="Password :"
-                android:textColor="#666666" />
+                android:text="Password :" />
 
             <!-- Input Password -->
             <EditText

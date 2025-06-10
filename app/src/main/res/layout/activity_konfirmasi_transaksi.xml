@@ -6,15 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:layout_margin="20dp"
-    android:background="@android:color/white">
+    android:layout_margin="20dp">
 
     <!-- Judul -->
     <TextView
         android:id="@+id/tv_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Konfirmasi Data"
+        android:text="@string/Konfirmasi_Data"
         android:fontFamily="@font/monsterratbold"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -26,8 +25,8 @@
         android:id="@+id/tv_nama_pelanggan_konfirmasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama"
         android:fontFamily="@font/monsterratbold"
+        android:text="@string/card_pelanggan_nama"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -45,7 +44,7 @@
         android:id="@+id/tv_nama_layanan_konfirmasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Layanan"
+        android:text="@string/layanan"
         android:fontFamily="@font/monsterratbold"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -63,7 +62,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Layanan Tambahan"
+        android:text="@string/tambahan_LayananTambahan"
         android:fontFamily="@font/monsterratbold"
         android:textStyle="bold"
         android:textSize="16sp"
@@ -86,7 +85,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total Bayar"
+            android:text="@string/invoice_TotalBayar"
             android:fontFamily="@font/poppinsregular"
             android:textStyle="bold"
             android:textSize="18sp" />
@@ -116,7 +115,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Batal"
+            android:text="@string/Batal"
             android:fontFamily="@font/monsterratbold"
             android:backgroundTint="@android:color/holo_orange_light"
             android:textColor="@android:color/white" />
@@ -130,7 +129,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Pembayaran"
+            android:text="@string/Pembayaran"
             android:fontFamily="@font/monsterratbold"
             android:backgroundTint="@android:color/holo_green_dark"
             android:textColor="@android:color/white" />

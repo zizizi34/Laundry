@@ -6,15 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/main"
-    android:layout_margin="20dp"
-    android:background="#FFF4F9">
+    android:layout_margin="20dp">
 
     <!-- Data Pelanggan -->
     <TextView
         android:text="@string/datatransaksi_DataPelanggan"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#333"
         android:fontFamily="@font/montserratextrabold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -49,7 +47,6 @@
         android:fontFamily="@font/montserratextrabold"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#333"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -84,7 +81,6 @@
         android:fontFamily="@font/montserratextrabold"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#333"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

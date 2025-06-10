@@ -117,4 +117,29 @@
     <string name="service_price_label">service_price_label</string>
     <string name="cancel_service_selection">cancel_service_selection</string>
     <string name="cancel_additional_service_selection">cancel_additional_service_selection</string>
+    <string name="format_id">format_id</string>
+    <string name="format_no_hp">format_no_hp</string>
+    <string name="format_nama">format_nama</string>
+    <string name="format_alamat">format_alamat</string>
+    <string name="tambahan_LayananTambahan">tambahan_LayananTambahan</string>
+    <string name="tambahan_harga">tambahan_harga</string>
+    <string name="tambahan_NamaLayananTambahan">tambahan_NamaLayananTambahan</string>
+    <string name="tambah_layanan">tambah_layanan</string>
+    <string name="Nama_Layanan">Nama_Layanan</string>
+    <string name="Masukkan_Nama_Layanan">Masukkan_Nama_Layanan</string>
+    <string name="Harga_Layanan">Harga_Layanan</string>
+    <string name="Masukkan_Harga_Layanan">Masukkan_Harga_Layanan</string>
+    <string name="Simpan">Simpan</string>
+    <string name="error_nama_layanan_kosong">error_nama_layanan_kosong</string>
+    <string name="error_harga_layanan_kosong">error_harga_layanan_kosong</string>
+    <string name="error_harga_bukan_angka">error_harga_bukan_angka</string>
+    <string name="Berhasil_simpan_layanan">Berhasil_simpan_layanan</string>
+    <string name="Gagal_simpan_layanan">Gagal_simpan_layanan</string>
+    <string name="Edit_Pegawai">Edit_Pegawai</string>
+    <string name="layanan">layanan</string>
+    <string name="Konfirmasi_Data">Konfirmasi_Data</string>
+    <string name="Batal">Batal</string>
+    <string name="Pembayaran">Pembayaran</string>
+
+
 </resources>

@@ -118,5 +118,29 @@
     <string name="service_price_label">Price: %1$s</string>
     <string name="cancel_service_selection">Cancel Selecting Service</string>
     <string name="cancel_additional_service_selection">Cancel Select Additional Services</string>
+    <string name="format_id">Customer ID: %1$s</string>
+    <string name="format_no_hp">Phone Number: %1$s</string>
+    <string name="format_nama">Customer Name: %1$s</string>
+    <string name="format_alamat">Address: %1$s</string>
+    <string name="tambahan_LayananTambahan">Additional Services</string>
+    <string name="tambahan_harga">Price</string>
+    <string name="tambahan_NamaLayananTambahan">Additional Service Names</string>
+    <string name="tambah_layanan">Add Services</string>
+    <string name="Nama_Layanan">Service Name</string>
+    <string name="Masukkan_Nama_Layanan">Enter a service name</string>
+    <string name="Harga_Layanan">Service Price</string>
+    <string name="Masukkan_Harga_Layanan">Enter the price of the service</string>
+    <string name="Simpan">Save</string>
+    <string name="error_nama_layanan_kosong">Service Name Must be filled in</string>
+    <string name="error_harga_layanan_kosong">Service Price Must be filled in</string>
+    <string name="error_harga_bukan_angka">Price Must Be Numerical</string>
+    <string name="Berhasil_simpan_layanan">Successfully Save Customer</string>
+    <string name="Gagal_simpan_layanan">Failed to Save Customer</string>
+    <string name="Edit_Pegawai">Edit Employee</string>
+    <string name="layanan">Service</string>
+    <string name="Konfirmasi_Data">Data Confirmation</string>
+    <string name="Batal">Cancel</string>
+    <string name="Pembayaran">Payment</string>
+
 
 </resources>

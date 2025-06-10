@@ -33,7 +33,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginStart="20dp"
-                android:textColor="#333333"
                 android:gravity="center" />
 
             <View

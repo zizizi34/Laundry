@@ -48,19 +48,19 @@ class TambahTambahan : AppCompatActivity() {
         val hargaStr = etHarga.text.toString().trim()
 
         if (nama.isEmpty()) {
-            etNama.error = "Nama layanan harus diisi"
+            etNama.error =  getString(R.string.error_nama_layanan_kosong)
             etNama.requestFocus()
             return
         }
         if (hargaStr.isEmpty()) {
-            etHarga.error = "Harga layanan harus diisi"
+            etHarga.error = getString(R.string.error_harga_layanan_kosong)
             etHarga.requestFocus()
             return
         }
 
         val harga = hargaStr.toIntOrNull()
         if (harga == null) {
-            etHarga.error = "Harga harus berupa angka"
+            etHarga.error = getString(R.string.error_harga_bukan_angka)
             etHarga.requestFocus()
             return
         }
@@ -84,11 +84,11 @@ class TambahTambahan : AppCompatActivity() {
 
         tambahanBaru.setValue(data)
             .addOnSuccessListener {
-                Toast.makeText(this, "Berhasil simpan layanan tambahan", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Berhasil_simpan_layanan) , Toast.LENGTH_SHORT).show()
                 finish()
             }
             .addOnFailureListener {
-                Toast.makeText(this, "Gagal simpan layanan tambahan", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.Gagal_simpan_layanan), Toast.LENGTH_SHORT).show()
             }
     }
 

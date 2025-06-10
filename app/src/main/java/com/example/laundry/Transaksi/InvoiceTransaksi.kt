@@ -347,11 +347,28 @@ class InvoiceTransaksi : AppCompatActivity() {
     }
 
     private fun buildPrintMessage(): String {
-        return buildString {
-            append("\n")
+        val receipt = StringBuilder()
+
+        // ESC/POS Commands for formatting
+        val ESC = "\u001B"
+        val INIT = "$ESC@"
+        val CENTER = "${ESC}a\u0001"
+        val LEFT = "${ESC}a\u0000"
+        val BOLD_ON = "${ESC}E\u0001"
+        val BOLD_OFF = "${ESC}E\u0000"
+        val CUT = "${ESC}i"
+
+        receipt.apply {
+            append(INIT) // Initialize printer
+            append(CENTER)
+            append(BOLD_ON)
             append("Laundry Speed\n")
             append("Alamat Laundry\n")
-            append("==============================\n")
+            append(BOLD_OFF)
+            append("===============================\n")
+            append(LEFT)
+
+            // Transaction Details
             append("ID Transaksi: ${tvIdTransaksi.text}\n")
             append("Tanggal: ${tvTanggal.text}\n")
             append("Pelanggan: ${tvNamaPelanggan.text}\n")
@@ -362,29 +379,41 @@ class InvoiceTransaksi : AppCompatActivity() {
             }
 
             tvStatus?.let { append("Status: ${it.text}\n") }
-            append("------------------------------\n")
+            append("-------------------------------\n")
 
-            val namaUtama = tvLayananUtama.text.toString().take(20).padEnd(20)
-            val hargaUtama = tvHargaLayanan.text.toString().padStart(12)
-            append("$namaUtama$hargaUtama\n")
+            // Format layanan utama - dengan format yang sama seperti layanan tambahan
+            val hargaUtamaClean = tvHargaLayanan.text.toString().replace("Rp", "").replace(".", "").replace(",", "").trim()
+
+            append("Cuci Bersih Paket Lengkap\n")
+            append("Rp${hargaUtamaClean},00\n")
+            append("\n")
 
             if (listTambahan.isNotEmpty()) {
-                append("\nLayanan Tambahan:\n")
+                append("Layanan Tambahan:\n")
                 listTambahan.forEachIndexed { index, item ->
-                    val nama = "${index + 1}. ${item.namaLayanan ?: ""}".take(20).padEnd(20)
-                    val harga = (item.hargaLayanan ?: "0").padStart(12)
-                    append("$nama Rp $harga\n")
+                    val namaLayanan = item.namaLayanan ?: ""
+                    val hargaLayananClean = (item.hargaLayanan ?: "0").replace("Rp", "").replace(".", "").replace(",", "").trim()
+
+                    // Format dengan harga di bawah nama layanan
+                    append("${index + 1}. $namaLayanan\n")
+                    append("   Rp$hargaLayananClean\n")
                 }
-                append("------------------------------\n")
+                append("-------------------------------\n")
                 append("Subtotal Tambahan: ${tvSubtotalTambahan.text}\n")
             }
 
+            append(BOLD_ON)
             append("TOTAL BAYAR: ${tvTotalBayar.text}\n")
-            append("==============================\n")
+            append(BOLD_OFF)
+            append("===============================\n")
+            append(CENTER)
             append("Terima kasih telah memilih\n")
             append("Laundry Speed\n")
             append("\n\n\n")
+            append(CUT) // Cut paper
         }
+
+        return receipt.toString()
     }
 
     private fun buildWhatsappMessage(): String {

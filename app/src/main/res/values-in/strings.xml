@@ -118,5 +118,28 @@
     <string name="service_price_label">Harga: %1$s</string>
     <string name="cancel_service_selection">Batal Memilih Layanan</string>
     <string name="cancel_additional_service_selection">Batal Memilih Layanan Tambahan</string>
+    <string name="format_id">ID Pelanggan: %1$s</string>
+    <string name="format_no_hp">No HP: %1$s</string>
+    <string name="format_nama">Nama Pelanggan</string>
+    <string name="format_alamat">Alamat: %1$s</string>
+    <string name="tambahan_LayananTambahan">Layanan Tambahan</string>
+    <string name="tambahan_harga">Harga</string>
+    <string name="tambahan_NamaLayananTambahan">Nama Layanan Tambahan</string>
+    <string name="tambah_layanan">Tambah Layanan</string>
+    <string name="Nama_Layanan">Nama Layanan</string>
+    <string name="Masukkan_Nama_Layanan">Masukkan Nama Layanan</string>
+    <string name="Harga_Layanan">Harga Layanan</string>
+    <string name="Masukkan_Harga_Layanan">Masukkan Harga Layanan</string>
+    <string name="Simpan">Simpan</string>
+    <string name="error_nama_layanan_kosong">Nama Layanan Harus diisi</string>
+    <string name="error_harga_layanan_kosong">Harga Layanan Harus diisi</string>
+    <string name="error_harga_bukan_angka">Harga Harus Angka</string>
+    <string name="Berhasil_simpan_layanan">Berhasil Simpan Pelanggan</string>
+    <string name="Gagal_simpan_layanan">Gagal Simpan Pelanggan</string>
+    <string name="Edit_Pegawai">Edit Pegawai</string>
+    <string name="layanan">Layanan</string>
+    <string name="Konfirmasi_Data">"Konfirmasi Data "</string>
+    <string name="Batal">Konfirmasi</string>
+    <string name="Pembayaran">Pembayaran</string>
 
 </resources>

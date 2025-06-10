@@ -1,5 +1,6 @@
 package com.example.laundry.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,11 +20,14 @@ class adapter_pilih_pelanggan(
         val tvNoHp: TextView = itemView.findViewById(R.id.tvDataNoHpPelanggan)
         val tvAlamat: TextView = itemView.findViewById(R.id.tvDataAlamatPelanggan)
 
+        @SuppressLint("StringFormatInvalid")
         fun bind(pelanggan: ModelPelanggan) {
+            val context = itemView.context
+
             tvNama.text = pelanggan.namaPelanggan
-            tvID.text = "ID: ${pelanggan.id_pelanggan}"
-            tvNoHp.text = "No HP: ${pelanggan.noHpPelanggan}"
-            tvAlamat.text = "Alamat: ${pelanggan.alamatPelanggan}"
+            tvID.text = context.getString(R.string.format_id, pelanggan.id_pelanggan)
+            tvNoHp.text = context.getString(R.string.format_no_hp, pelanggan.noHpPelanggan)
+            tvAlamat.text = context.getString(R.string.format_alamat, pelanggan.alamatPelanggan)
 
             itemView.setOnClickListener {
                 onItemClick(pelanggan)
@@ -41,5 +45,5 @@ class adapter_pilih_pelanggan(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(list[position])
-       }
+    }
 }
